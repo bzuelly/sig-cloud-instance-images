@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on cli */
 
-        app = docker.build("rockylinux:8.5")
+        app = docker.build("rockylinux:latest")
     }
 
     stage('Test image') {
