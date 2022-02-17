@@ -9,7 +9,7 @@ node {
 
     stage('Build image') {
         /* This builds the actual image; synonymous to
-         * docker build on the cli */
+         * docker build on cli */
 
         app = docker.build("rockylinux:8.5")
     }
