@@ -1,6 +1,6 @@
 FROM scratch
 ADD rocky-8.4-docker-x86_64.tar.xz /
-
+RUN dnf -y update
 LABEL org.label-schema.schema-version="1.0" \
     org.label-schema.name="Rocky Linux Base Image" \
     org.label-schema.vendor="Rocky Enterprise Software Foundation" \
